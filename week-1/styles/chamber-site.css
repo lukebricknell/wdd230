@@ -1,0 +1,117 @@
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #222;
+}
+
+header p {
+  font-size: 16px;
+}
+
+.scenarios {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: stretch;
+  row-gap: 10px;
+  height: max-content;
+  margin-top: 72px;
+}
+
+.scenarios div {
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px 2px hsla(45, 97%, 54%, 0.302);
+  border-radius: 10px;
+}
+
+.scenarios div p:first-child {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.branding {
+  margin-top: 72px;
+}
+
+.branding div:nth-child(-n + 2) {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
+.branding .fonts p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.colour-box-1 {
+  width: 20px;
+  height: 20px;
+  background-color: #222;
+  border-radius: 2px;
+}
+
+.colour-box-2 {
+  width: 20px;
+  height: 20px;
+  background-color: #fcc419;
+  border-radius: 2px;
+}
+
+.wireframes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.wireframes img:first-child {
+  width: 50%;
+  height: auto;
+  border: 2px solid hsl(45, 97%, 54%);
+}
+.wireframes img:last-child {
+  width: 70%;
+  height: auto;
+  border: 2px solid #fcc419;
+}
+
+@media screen and (min-width: 760px) {
+  header p {
+    font-size: 24px;
+  }
+
+  .scenarios {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+  }
+
+  .scenarios div {
+    padding: 1rem;
+  }
+
+  .wire-section {
+    margin-top: 56px;
+  }
+
+  .wire-section p {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .wireframes {
+    display: flex;
+    flex-direction: row;
+    gap: w0px;
+  }
+
+  .wireframes img:first-child {
+    width: 10%;
+    height: auto;
+  }
+  .wireframes img:last-child {
+    width: 40%;
+    height: auto;
+  }
+}
