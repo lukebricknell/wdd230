@@ -47,4 +47,12 @@
   nav a {
     width: 100%;
   }
+
+  .hidden {
+    display: none;
+  }
+
+  .menuBtn {
+    display: none;
+  }
 }
