@@ -18,6 +18,11 @@ header img {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
 }
 
+header p {
+  font-size: 32px;
+  font-weight: 600;
+}
+
 .menu-1 {
   transform-origin: top left;
   position: absolute;
