@@ -1,0 +1,86 @@
+@media screen and (min-width: 865px) {
+  .header-lg img {
+    width: 86px;
+  }
+
+  .nav.nav-lg {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .nav.nav-lg a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .nav.nav-lg a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all;
+  }
+
+  .nav.nav-lg a:last-child {
+    display: inline-block;
+    padding: 14px 24px;
+    color: #222;
+    background-color: #fcc419;
+    border-radius: 32px;
+  }
+  .nav.nav-lg a:last-child:hover {
+    opacity: 90%;
+    transition: all;
+    transition-duration: 300ms;
+  }
+
+  .menuBtn {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 46px;
+  }
+
+  .hero-btns a:first-child {
+    padding: 16px 24px;
+    margin-right: 20px;
+  }
+  .hero-btns a:last-child {
+    padding: 16px 24px;
+  }
+
+  section {
+    margin: 72px auto;
+    padding: 0 24px;
+  }
+
+  h2 {
+    font-size: 36px;
+    padding-bottom: 35px;
+  }
+
+  .weather-section {
+    margin-bottom: 72px;
+  }
+
+  .weather-grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .spotlight-grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  .spotlight-grid img {
+    height: auto;
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
