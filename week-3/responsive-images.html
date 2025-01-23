@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images Demo</title>
+  </head>
+  <body>
+    <header><h1>Responsive Images Demo</h1></header>
+    <main>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="./images/temple-small.webp"
+            media="(max-width: 500px)"
+          />
+          <source
+            srcset="./images/temple-medium.webp"
+            media="(max-width: 1000px)"
+          />
+          <img
+            src="./images/temple-large.webp"
+            alt="A large omage pf the Apia Somoa Temple."
+            width="1500"
+            height="750"
+          />
+        </picture>
+      </div>
+    </main>
+    <footer>
+      <p>End of Responsive Image Demo</p>
+      <p>Last Modified: <span id="last-modification"></span></p>
+    </footer>
+  </body>
+  <script src="./scripts/script.js"></script>
+</html>
