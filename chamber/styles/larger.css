@@ -83,4 +83,14 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  /* DISCOVER */
+
+  .discover-main {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .image-section {
+    padding: 0 2rem 2rem 2rem;
+  }
 }

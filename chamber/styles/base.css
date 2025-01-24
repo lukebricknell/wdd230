@@ -2,6 +2,7 @@ body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -258,4 +259,78 @@ footer {
   display: flex;
   align-items: start;
   flex-direction: column;
+}
+
+/* DISCOVER */
+main {
+  margin-top: 62px;
+  display: grid;
+  grid-template-columns: 1;
+}
+
+.sidebar .quote {
+  margin-bottom: 24px;
+}
+
+.sidebar .layout {
+  padding: 1rem;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .business-highlight img {
+  width: 80%;
+  height: auto;
+}
+.sidebar .business-highlight h3 span {
+  font-weight: 400;
+}
+
+.sidebar .business-highlight {
+  margin-bottom: 24px;
+}
+.sidebar .events {
+  margin-bottom: 24px;
+}
+
+.sidebar .events p span {
+  font-weight: 500;
+}
+
+.image-section {
+  padding: 1rem;
+}
+
+.image-section div {
+  overflow: hidden;
+}
+
+.image-section div img {
+  width: 100%;
+  height: auto;
+}
+
+.image-section div img:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+.image-section p span {
+  font-weight: 500;
+}
+
+.logos {
+  width: 100%;
+}
+
+.logos-parent {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  align-items: center;
+}
+
+.logos-parent img {
+  width: 300px;
+  height: auto;
 }

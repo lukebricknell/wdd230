@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      property="og:title"
+      content="Joburg Chamber of Commerce - A Platform for Business Growth"
+    />
+    <meta
+      property="og:description"
+      content="An organisation focussed on assisting business in the Joburg area grow, and add value to the economy"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="author" content="Luke Bricknell" />
+    <meta
+      property="og:url"
+      content="https://lukebricknell.github.io/wdd230/chamber/"
+    />
+    <meta
+      property="og:image"
+      content="https://lukebricknell.github.io/wdd230/chamber/images/logo.png"
+    />
+    <meta
+      name="description"
+      content="An organisation focussed on assisting business in the Joburg area grow, and add value to the economy"
+    />
+    <link href="./styles/normalize.css" rel="stylesheet" />
+    <link href="./styles/base.css" rel="stylesheet" />
+    <link href="./styles/larger.css" rel="stylesheet" />
+    <link rel="icon" href="./images/logo.png" />
+    <title>Joburg Chamber of Commerce - A Platform for Business Growth</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-lg">
+        <img
+          loading="lazy"
+          src="./images/logo.png"
+          alt="Joburg Chamber of Commerce Logo"
+        />
+        <div class="hamburger-wrapper">
+          <button class="menuBtn">
+            <span class="hamburger line-1"></span>
+            <span class="hamburger line-2"></span>
+            <span class="hamburger line-3"></span>
+          </button>
+        </div>
+        <!-- LG -->
+        <nav class="nav nav-lg">
+          <a href="./">Business Help</a>
+          <a href="./">Directory</a>
+          <a href="./">Events</a>
+          <a href="./" class="nav-button">Book Discovery Call</a>
+        </nav>
+      </div>
+      <div class="nav-sm-wrapper hidden">
+        <nav class="nav nav-sm">
+          <a href="./">Business Help</a>
+          <a href="./">Directory</a>
+          <a href="./">Events</a>
+          <a href="./" class="nav-button">Book Discovery Call</a>
+        </nav>
+      </div>
+    </header>
+    <main class="discover-main">
+      <section class="sidebar">
+        <div class="quote layout">
+          <h2>Quote of the day</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatum, dignissimos delectus magni eius aliquam quas veritatis,
+            laboriosam consectetur sint placeat libero ratione qui deleniti
+            quasi hic, cumque harum itaque dicta!
+          </p>
+        </div>
+        <div class="business-highlight layout">
+          <img loading="lazy" src="./images/sausage-saloon.png" />
+          <h3>Business Highlight - <span>Sausage Saloon</span></h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+            sunt voluptatem adipisci dolor! Asperiores numquam temporibus odit
+            ab omnis minus sit quas doloribus tempora, maiores voluptatum
+            eligendi beatae mollitia. Itaque.
+          </p>
+        </div>
+        <div class="events layout">
+          <h3>Upcoming Events 📆</h3>
+          <p>23 January: <span>Randburg Business Meetup</span></p>
+          <p>15 March: <span>Joburg Economic Forum</span></p>
+          <p>01 May: <span>Ferndale Meet and Greet</span></p>
+        </div>
+        <div class="layout visit">
+          <h3>Alert ‼️</h3>
+          <p class="visit-message"></p>
+        </div>
+      </section>
+      <section>
+        <div class="image-section">
+          <div class="image-wrapper">
+            <img loading="lazy" src="./images/meeting-1.webp" />
+          </div>
+
+          <p>
+            <span>Ranburg Businesses Meet up</span> - The Sausage Saloon Cresta
+          </p>
+        </div>
+        <div class="image-section">
+          <div class="image-wrapper">
+            <img
+              loading="lazy"
+              src="./images/grow-sme.webp"
+              alt="Image of our blog post - How to Grow and SME"
+            />
+          </div>
+          <p>
+            <span>How to Grow an SME</span> - The steps to growth in South
+            Africa
+          </p>
+        </div>
+        <div class="image-section">
+          <div class="image-wrapper">
+            <img
+              loading="lazy"
+              src="./images/economic-forum.webp"
+              alt="Image representing the Joburg Economic Forum"
+            />
+          </div>
+
+          <p>
+            <span>Joburg Economic Forum</span> - 15 March @ Sandton Conference
+            Center
+          </p>
+        </div>
+        <div class="image-section">
+          <div class="image-wrapper">
+            <img
+              loading="lazy"
+              src="./images/milestone.webp"
+              alt="Image of people celebrating"
+            />
+          </div>
+          <p>
+            <span>Joburg Chamber of Commerce turns 50</span> - A look back at
+            the good we've done
+          </p>
+        </div>
+        <div class="image-section">
+          <div class="image-wrapper">
+            <img
+              loading="lazy"
+              src="./images/meet.webp"
+              alt="Image of people meeting up and networking"
+            />
+          </div>
+          <p>
+            <span>Ferndale Meet and Greet</span> - A networking event for
+            businesses in Ferndale
+          </p>
+        </div>
+        <div class="image-section">
+          <div class="image-wrapper">
+            <img
+              loading="lazy"
+              src="./images/statistics.webp"
+              alt="Image depicting statistical data"
+            />
+          </div>
+          <p>
+            <span>2024 Joburg Business Report</span> - A look at the current
+            state of business affairs
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>WDD 230</p>
+        <h3>Luke Bricknell</h3>
+        <p class="last-modification"></p>
+      </div>
+      <div>
+        <p>Tel: 031 893 9902</p>
+        <p>Email: info@joburgcommerce.coza</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/visit.js"></script>
+</html>
