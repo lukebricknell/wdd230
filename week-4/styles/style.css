@@ -1,0 +1,46 @@
+caption {
+  padding: 10px;
+  caption-side: bottom;
+}
+
+table {
+  border: thin solid #333;
+  border-collapse: collapse;
+}
+
+table tr th {
+  border: none;
+}
+
+thead tr:first-child {
+  border: none;
+  background-color: #222;
+  color: white;
+}
+
+thead tr:last-child th:first-child {
+  background-color: #222;
+}
+
+thead tr:last-child {
+  background-color: #999;
+}
+
+tbody tr:first-child td {
+  border-top: 0px;
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #999;
+}
