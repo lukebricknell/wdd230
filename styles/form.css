@@ -1,0 +1,36 @@
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 24px 16px;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+label:not(last) {
+  margin-bottom: 20px;
+}
+
+input {
+  line-height: 2;
+}
+
+.pass-confirm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.pass-confirm p {
+  line-height: 1;
+  margin: 0;
+}

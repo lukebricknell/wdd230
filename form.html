@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+    <meta
+      name="description"
+      content="An activity in week 4 of the WDD230 module, creating a form"
+    />
+    <meta property="og:title" content="Form Implementation page" />
+    <meta
+      property="og:description"
+      content="An activity in week 4 of the WDD230 module, creating a form"
+    />
+    <title>Form Implementation page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-wrapper">
+        <img
+          src="./images/oupa.webp"
+          alt="Image of myself with my grandfather"
+        />
+        <span>Luke Bricknell</span>
+      </div>
+      <nav>
+        <button class="menuBtn">
+          <span class="hamburger menu-1"></span>
+          <span class="hamburger menu-2"></span>
+          <span class="hamburger menu-3"></span>
+        </button>
+        <a class="active nav-li" href="#">Home</a>
+        <a class="nav-li" href="#">Chamber</a>
+        <a class="nav-li" href="#">Site Plan</a>
+        <a class="nav-li" href="#">Form</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Form Title</h1>
+      <form>
+        <label
+          >Username <span class="required">*</span>&nbsp;<input
+            type="text"
+            name="username"
+            id="username"
+            required
+        /></label>
+        <label
+          >Password <span class="required">*</span>&nbsp;<input
+            type="password"
+            name="password"
+            id="password"
+            value=""
+            pattern="[a-zA-Z0-9._%+-]{=>8}"
+            required
+        /></label>
+        <label>
+          <div class="pass-confirm">
+            <p>Password Confirm<span class="required">*</span>&nbsp;</p>
+            <span id="message"></span>
+          </div>
+          <input
+            type="password"
+            name="passwordConfirm"
+            id="passwordConfirm"
+            value=""
+            pattern="[a-zA-Z0-9._%+-]{=>8}"
+            required
+        /></label>
+        <label
+          >Please Enter a Valid Email
+          <span class="required">*</span>&nbsp;<input
+            type="email"
+            name="email"
+            id="email"
+            pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+            required
+        /></label>
+        <label
+          >Page Rating <span class="required">*</span>&nbsp;<input
+            type="range"
+            step="1"
+            min="0"
+            max="10"
+            name="range"
+            value="0"
+          />
+        </label>
+        <input type="submit" value="Sign up" />
+      </form>
+    </main>
+    <footer>
+      <h3>&copy; <span id="year"></span>. Luke Bricknell - Gauteng.</h3>
+      <p>Last Modified:&nbsp;<span id="lastModified"></span></p>
+    </footer>
+  </body>
+  <script src="./scripts/form.js"></script>
+  <script src="./scripts/getDates.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/visitCounter.js"></script>
+</html>
