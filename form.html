@@ -11,6 +11,7 @@
       name="description"
       content="An activity in week 4 of the WDD230 module, creating a form"
     />
+    <meta name="author" content="Luke Bricknell" />
     <meta property="og:title" content="Form Implementation page" />
     <meta
       property="og:description"
@@ -81,9 +82,14 @@
             pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
             required
         /></label>
-        <label
-          >Page Rating <span class="required">*</span>&nbsp;<input
+        <label>
+          <div class="pass-confirm">
+            Page Rating
+            <p>Rating: <span id="range-amt">0</span></p>
+          </div>
+          <input
             type="range"
+            id="range"
             step="1"
             min="0"
             max="10"

@@ -1,7 +1,8 @@
 const password = document.querySelector("#password");
 const passwordConfirm = document.querySelector("#passwordConfirm");
 const message = document.querySelector("#message");
-const submit = document.querySelector("#submit");
+const rangeAmt = document.querySelector("#range-amt");
+const range = document.querySelector("#range");
 
 passwordConfirm.addEventListener("focusout", onSubmit);
 
@@ -15,3 +16,7 @@ function onSubmit() {
     message.style.visibility = "none";
   }
 }
+
+range.addEventListener("input", (event) => {
+  rangeAmt.textContent = event.target.value;
+});

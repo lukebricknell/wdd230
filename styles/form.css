@@ -1,7 +1,7 @@
 :root {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --black: #333;
+  --fullWidth: 100%;
+  --marginBtm: 20px;
 }
 
 main {
@@ -11,19 +11,20 @@ main {
 label,
 input {
   display: block;
-  width: 100%;
+  width: var(--fullWidth);
   max-width: 400px;
 }
 
 label:not(last) {
-  margin-bottom: 20px;
+  margin-bottom: var(--marginBtm);
 }
 
 input {
   line-height: 2;
 }
 
-.pass-confirm {
+.pass-confirm,
+.flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,4 +34,10 @@ input {
 .pass-confirm p {
   line-height: 1;
   margin: 0;
+}
+
+.range {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
