@@ -93,4 +93,16 @@
   .image-section {
     padding: 0 2rem 2rem 2rem;
   }
+
+  /* FORM.HTML */
+
+  .form-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .thank-container {
+    max-width: 60vw;
+    margin: 0 auto;
+  }
 }

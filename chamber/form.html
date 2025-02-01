@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      property="og:title"
+      content="Joburg Chamber of Commerce - A Platform for Business Growth"
+    />
+    <meta
+      property="og:description"
+      content="An organisation focussed on assisting business in the Joburg area grow, and add value to the economy"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="author" content="Luke Bricknell" />
+    <meta
+      property="og:url"
+      content="https://lukebricknell.github.io/wdd230/chamber/"
+    />
+    <meta
+      property="og:image"
+      content="https://lukebricknell.github.io/wdd230/chamber/images/logo.png"
+    />
+    <meta
+      name="description"
+      content="An organisation focussed on assisting business in the Joburg area grow, and add value to the economy"
+    />
+    <link href="./styles/normalize.css" rel="stylesheet" />
+    <link href="./styles/base.css" rel="stylesheet" />
+    <link href="./styles/larger.css" rel="stylesheet" />
+    <link rel="icon" href="./images/logo.png" />
+    <title>Joburg Chamber of Commerce - A Platform for Business Growth</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-lg">
+        <img src="./images/logo.png" alt="Joburg Chamber of Commerce Logo" />
+        <div class="hamburger-wrapper">
+          <button class="menuBtn">
+            <span class="hamburger line-1"></span>
+            <span class="hamburger line-2"></span>
+            <span class="hamburger line-3"></span>
+          </button>
+        </div>
+        <!-- LG -->
+        <nav class="nav nav-lg">
+          <a href="./">Business Help</a>
+          <a href="./">Directory</a>
+          <a href="./">Events</a>
+          <a href="./" class="nav-button">Book Discovery Call</a>
+        </nav>
+      </div>
+      <div class="nav-sm-wrapper hidden">
+        <nav class="nav nav-sm">
+          <a href="./">Business Help</a>
+          <a href="./">Directory</a>
+          <a href="./">Events</a>
+          <a href="./" class="nav-button">Book Discovery Call</a>
+        </nav>
+      </div>
+    </header>
+    <main class="form-main">
+      <div>
+        <h2>Become a Member!</h2>
+        <form method="get" action="./thankyou.html">
+          <label class="form-label"
+            >First Name *<input type="text" name="fname" id="fname" required
+          /></label>
+          <label class="form-label"
+            >Last Name *<input type="text" name="lname" id="lname" required
+          /></label>
+          <label class="form-label"
+            >Current Job Position<input
+              type="text"
+              name="position"
+              id="position"
+              pattern="^[a-zA-Z\-\s]{7,}$"
+          /></label>
+          <label class="form-label"
+            >Email *<input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="john@mail.com"
+              required
+          /></label>
+          <label class="form-label"
+            >Phone Number *<input type="tel" name="tel" id="tel" required
+          /></label>
+          <label class="form-label"
+            >Business/Organisation Name *<input
+              type="text"
+              name="business"
+              id="business"
+              required
+          /></label>
+          <div class="form-label">
+            <h4 class="form-h4">Membership Level</h4>
+            <label class="radio"
+              ><input
+                type="radio"
+                name="membership"
+                id="np"
+                value="np"
+                class="radio btn"
+              />
+              <p>NP Membership</p></label
+            >
+            <label class="radio"
+              ><input
+                type="radio"
+                name="membership"
+                id="bronze"
+                value="bronze"
+                class="radio bt"
+              />
+              <p>Bronze Membership</p></label
+            >
+            <label class="radio"
+              ><input
+                type="radio"
+                name="membership"
+                id="silver"
+                value="silver"
+                class="radio bt"
+              />
+              <p>Silver Membership</p></label
+            >
+            <label class="radio"
+              ><input
+                type="radio"
+                name="membership"
+                id="gold"
+                value="gold"
+                class="radio btn"
+              />
+              <p>Gold Membership</p></label
+            >
+          </div>
+          <label class="form-label"
+            >Business Description<textarea
+              name="description"
+              id="description"
+              rows="4"
+              value=""
+              class=""
+            >
+            </textarea>
+          </label>
+          <input type="hidden" id="timestamp" name="timestamp" />
+          <button type="submit">Join the Chamber</button>
+        </form>
+      </div>
+      <div>
+        <h3>Chamber Benefits</h3>
+        <p class="benefits-p">
+          Becoming a member of the Joburg Chamber of Commerce comes with a host
+          of benefits, that span networking, increasing knowledge and potential
+          funding for your business!
+        </p>
+        <div class="benefits-container">
+          <ul class="benefits-ul">
+            <li class="benefits-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <p>Access to exclusive networking events</p>
+            </li>
+            <li class="benefits-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+              </svg>
+
+              <p>A place in our business directory</p>
+            </li>
+            <li class="benefits-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                />
+              </svg>
+              <p>A social media spotlight</p>
+            </li>
+            <li class="benefits-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+
+              <p>Early access to workshop and event registration</p>
+            </li>
+            <li class="benefits-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+                />
+              </svg>
+
+              <p>Personalised growth strategy planning</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>WDD 230</p>
+        <h3>Luke Bricknell</h3>
+        <p class="last-modification"></p>
+      </div>
+      <div>
+        <p>Tel: 031 893 9902</p>
+        <p>Email: info@joburgcommerce.coza</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./scripts/script.js"></script>
+</html>
