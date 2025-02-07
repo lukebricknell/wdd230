@@ -275,7 +275,7 @@ footer {
 main {
   margin-top: 62px;
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
 }
 
 .sidebar .quote {
