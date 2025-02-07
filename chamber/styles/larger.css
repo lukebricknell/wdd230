@@ -105,4 +105,19 @@
     max-width: 60vw;
     margin: 0 auto;
   }
+
+  .member-dir {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  .member-dir-flex {
+    gap: 20px;
+  }
+
+  .member-dir-flex div img {
+    width: 10%;
+  }
 }

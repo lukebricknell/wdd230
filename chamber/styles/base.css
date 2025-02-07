@@ -474,11 +474,37 @@ button[type="submit"] {
   transition: all 300ms;
 }
 
-.member-dir {
+.member-toggle {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.member-dir-grid {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 20px;
+}
+
+.member-dir-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.member-dir-flex div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.member-dir-flex div img {
+  width: 30%;
+  height: auto;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 #member-directory div {
@@ -486,8 +512,12 @@ button[type="submit"] {
   text-align: center;
 }
 
-#member-directory div img {
+.member-dir-grid div img {
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: auto;
+}
+
+.active {
+  background-color: #3333335f;
 }

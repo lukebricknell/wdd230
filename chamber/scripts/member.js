@@ -29,3 +29,29 @@ const displayMembers = (members) => {
 };
 
 getMembers();
+
+const icon1 = document.querySelector(".toggle-icon-1");
+
+const icon2 = document.querySelector(".toggle-icon-2");
+
+const memberDir = document.querySelector("#member-directory");
+
+icon1.addEventListener("click", () => {
+  icon2.classList.remove("active");
+  icon1.classList.add("active");
+
+  if (memberDir.classList.contains("member-dir-flex")) {
+    memberDir.classList.remove("member-dir-flex");
+    memberDir.classList.add("member-dir-grid");
+  }
+});
+
+icon2.addEventListener("click", () => {
+  icon1.classList.remove("active");
+  icon2.classList.add("active");
+
+  if (memberDir.classList.contains("member-dir-grid")) {
+    memberDir.classList.remove("member-dir-grid");
+    memberDir.classList.add("member-dir-flex");
+  }
+});
