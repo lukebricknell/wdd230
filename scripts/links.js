@@ -65,7 +65,7 @@ const displayLinks = (links) => {
     // Loop through each link in the current week's links array
     item.links.forEach((anchor, i) => {
       const a = document.createElement("a");
-      const space = document.createElement("a");
+      const space = document.createElement("span");
       space.textContent = " | ";
       a.href = anchor.url;
       // Check if it's the last item in the list and add a separator accordingly
