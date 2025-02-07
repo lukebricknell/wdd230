@@ -14,7 +14,7 @@ getLinks();
 const displayLinks = (links) => {
   const linkSection = document.querySelector("#link-section");
 
-  links.forEach((item) => {
+  links.weeks.forEach((item) => {
     let weekList = document.createElement("li");
     let week = document.createElement("span");
     console.log(item.week);
