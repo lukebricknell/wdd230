@@ -1,0 +1,113 @@
+{
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        {
+          "url": "./week-1/chamber-site-plan.html",
+          "title": "Chamber Layout"
+        },
+        {
+          "url": "./week-1/media-query.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "./week-1/media-query.html",
+          "title": "Media Query"
+        }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "./week-2/design.html",
+          "title": "Web Design"
+        },
+        {
+          "url": "https://codepen.io/lukebricknell/pen/GgKdBJg",
+          "title": "Code Pen"
+        },
+        {
+          "url": "./week-2/bom.html",
+          "title": "BOM"
+        }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        {
+          "url": "/week03/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "./week-3/lazyload.html",
+          "title": "Lazy Load Demo"
+        },
+        {
+          "url": "./week-3/responsive-images.html",
+          "title": "Responsive Images Demo"
+        },
+        {
+          "url": "./week-3/responsive-images.html",
+          "title": "Responsive Images Demo"
+        },
+        {
+          "url": "./week-3/bom.html",
+          "title": "BOM Updated Page"
+        },
+        {
+          "url": "./chamber/discover.html",
+          "title": "Chamber Project: Discover.html"
+        }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        {
+          "url": "https://codepen.io/lukebricknell/pen/XJrOqqR",
+          "title": "Pseudo Classes"
+        },
+        {
+          "url": "./images/combinators.png",
+          "title": "CSS Combinators"
+        },
+        {
+          "url": "./week-4/tablebuild.html",
+          "title": "HTML Table"
+        },
+        {
+          "url": "./form/index.html",
+          "title": "Form Activity"
+        },
+        {
+          "url": "./form.htm",
+          "title": "Form 2"
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        {
+          "url": "https://codepen.io/lukebricknell/pen/yyBmbMd",
+          "title": "Pseudo Classes"
+        },
+        {
+          "url": "./week-5/new-ward-members.json",
+          "title": "New Ward Members JSON"
+        },
+        {
+          "url": "./week-5/new-ward-members.json",
+          "title": "New Ward Members JSON"
+        },
+        {
+          "url": "./week-5/prophets.html",
+          "title": "Prophets"
+        }
+      ]
+    }
+  ]
+}

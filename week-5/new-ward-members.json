@@ -1,0 +1,11 @@
+{
+  "familyName": "Jensen",
+  "moveInDate": "10/12/2024",
+  "numFamily": 3,
+  "bishopricVisited": true,
+  "familyMembers": [
+    { "name": "Brad", "gender": "Male", "birthdate": "20/12/1966" },
+    { "name": "Bonita", "gender": "Female", "birthdate": "10/2/1969" },
+    { "name": "Matt", "gender": "Male", "birthdate": "11/3/2002" }
+  ]
+}
