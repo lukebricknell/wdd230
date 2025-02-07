@@ -17,6 +17,7 @@ const displayLinks = (links) => {
   links.forEach((item) => {
     let weekList = document.createElement("li");
     let week = document.createElement("span");
+    console.log(item.week);
 
     week.textContent = item.week + ":";
 
