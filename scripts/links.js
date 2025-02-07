@@ -2,11 +2,13 @@ const baseURL = "https://lukebricknell.github.io/wdd230/";
 
 const linksURL = "https://lukebricknell.github.io/wdd230/data/links.json";
 
-async function getLinks(linksurl) {
-  const response = await fetch(linksurl);
+async function getLinks() {
+  const response = await fetch(linksURL);
   const data = await response.json();
   console.log(data);
 }
+
+getLinks();
 
 const displayLinks = (links) => {
   const linkSection = document.querySelector("#link-section");
@@ -32,14 +34,3 @@ const displayLinks = (links) => {
     linkSection.appendChild(weekList);
   });
 };
-
-{
-  /* <li>
-              Week 1:
-              <a href="./week-1/chamber-site-plan.html">Layout</a
-              >&nbsp;|&nbsp;<a href="./week-1/media-query.html">Media Query</a
-              >&nbsp;|&nbsp;<a>JS Pen</a>
-            </li> */
-}
-
-getLinks(linksURL);
