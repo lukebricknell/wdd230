@@ -473,3 +473,14 @@ button[type="submit"] {
   opacity: 80%;
   transition: all 300ms;
 }
+
+#member-directory {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#member-directory div img {
+  margin: 0;
+  padding: 0;
+}
