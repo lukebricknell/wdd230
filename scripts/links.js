@@ -64,15 +64,16 @@ const displayLinks = (links) => {
 
     // Loop through each link in the current week's links array
     item.links.forEach((anchor, i) => {
-      const a = document.createElement("a");
-      const space = document.createElement("span");
+      let a = document.createElement("a");
+      let space = document.createElement("span");
       space.textContent = " | ";
       a.href = anchor.url;
       // Check if it's the last item in the list and add a separator accordingly
       if (i === item.links.length - 1) {
         a.textContent = anchor.title;
       } else {
-        a.textContent = anchor.title + space; // Add separator between links
+        a.textContent = anchor.title;
+        a.insertAdjacentElement("afterend", space); // Add separator between links
       }
       weekList.appendChild(a);
     });

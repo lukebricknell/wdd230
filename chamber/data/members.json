@@ -1,0 +1,60 @@
+{
+  "companies": [
+    {
+      "name": "Lajo Construction",
+      "address": "51 Hemingsway, Cape Town",
+      "phoneNumber": "061 892 9012",
+      "url": "https://www.facebook.com/LajoConstruct/",
+      "image": "",
+      "membership": "Gold"
+    },
+    {
+      "name": "Motsebone",
+      "address": "Landing Office Park, Durban",
+      "phoneNumber": "081 902 0039",
+      "url": "https://motsebone.co.za/",
+      "image": "./images/motsebone.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Ecofume",
+      "address": "69 Northway Rd, Durban",
+      "phoneNumber": "099 092 0012",
+      "url": "https://www.ecofume.co.za/",
+      "image": "./images/ecofume.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Bushman Roofing",
+      "address": "31 Sardine Rd, Cape Town",
+      "phoneNumber": "071 901 8392",
+      "url": "https://bushmanroofing1.website3.me/",
+      "image": "./images/bushman.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Kenred Air",
+      "address": "32 Long Avenue, Joburg",
+      "phoneNumber": "072 902 3912",
+      "url": "https://www.kenredair.co.za/",
+      "image": "./images/konrad.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "TJV Automation",
+      "address": "Lindon Office Park, Joburg",
+      "phoneNumber": "031 653 8901",
+      "url": "https://tjvautomationandcontrol.co.za/",
+      "image": "./images/automation.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Extreme Shelving",
+      "address": "98 Elephant Rd, Free State",
+      "phoneNumber": "031 768 9023",
+      "url": "https://extremeshelving.co.za/?srsltid=AfmBOoraZFvTwey8BPRU8Jd5zTTY3ZjF00JmCg5-VBYGG3kf-HeQROlY",
+      "image": "./images/shelving.webp",
+      "membership": "Gold"
+    }
+  ]
+}
