@@ -8,8 +8,6 @@ async function getLinks(linksurl) {
   console.log(data);
 }
 
-getLinks();
-
 const displayLinks = (links) => {
   const linkSection = document.querySelector("#link-section");
 
@@ -43,3 +41,5 @@ const displayLinks = (links) => {
               >&nbsp;|&nbsp;<a>JS Pen</a>
             </li> */
 }
+
+getLinks(linksURL);
