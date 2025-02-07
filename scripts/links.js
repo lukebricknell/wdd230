@@ -71,11 +71,13 @@ const displayLinks = (links) => {
       // Check if it's the last item in the list and add a separator accordingly
       if (i === item.links.length - 1) {
         a.textContent = anchor.title;
+        weekList.appendChild(a);
       } else {
         a.textContent = anchor.title;
-        a.insertAdjacentElement("afterend", space); // Add separator between links
+        weekList.appendChild(a);
+        weekList.appendChild(space);
+        // Add separator between links
       }
-      weekList.appendChild(a);
     });
 
     linkSection.appendChild(weekList);
