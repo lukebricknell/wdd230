@@ -4,8 +4,6 @@ const lon = "6.6372";
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${key}`;
 
-console.log(url);
-
 // select HTML elements in the document
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
