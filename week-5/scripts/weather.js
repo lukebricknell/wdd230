@@ -1,8 +1,10 @@
-const key = "d91df0738e1f763a78dba56404bf70c4";
+const key = "5a4cc54f81b8e292c3da33acb9f0d16c";
 const lat = "49.7501";
 const lon = "6.6372";
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial?appid=${key}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${key}`;
+
+console.log(url);
 
 // select HTML elements in the document
 const currentTemp = document.querySelector("#current-temp");
@@ -15,6 +17,7 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       console.log(data);
+      displayResults(data);
     } else {
       throw Error(await response.text());
     }
@@ -26,10 +29,11 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.temperature}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/w/${icon}.___`;
-  let desc = data.weather[0].______;
-  weatherIcon.setAttribute("___", _____);
-  weatherIcon.setAttribute("___", _____);
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.src = iconsrc;
+  weatherIcon.setAttribute("width", 60);
+  weatherIcon.setAttribute("height", 60);
   captionDesc.textContent = `${desc}`;
 }

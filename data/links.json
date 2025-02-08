@@ -108,6 +108,10 @@
           "title": "Prophets"
         },
         {
+          "url": "./week-5/weather.html",
+          "title": "Weather Forecast"
+        },
+        {
           "url": "./chamber/directory.html",
           "title": "Chamber - Directory"
         }
